@@ -249,7 +249,10 @@ function Shell({ children }: { children: ReactNode }) {
   return (
     <div className="min-h-screen bg-navy text-white">
       <div className="app-ambient fixed inset-0 -z-10" />
-      <div className="fixed inset-0 -z-10 opacity-[0.08] [background-image:linear-gradient(#D8E3F0_1px,transparent_1px),linear-gradient(90deg,#D8E3F0_1px,transparent_1px)] [background-size:56px_56px]" />
+      <div className="fixed inset-0 -z-10 opacity-[0.04] [background-image:linear-gradient(#D8E3F0_1px,transparent_1px),linear-gradient(90deg,#D8E3F0_1px,transparent_1px)] [background-size:56px_56px]" />
+      <div className="fixed -z-10 pointer-events-none" style={{top:"8%",left:"5%",width:"520px",height:"520px",borderRadius:"50%",background:"radial-gradient(ellipse,rgba(47,140,255,0.13) 0%,transparent 70%)",animation:"floatOrb 14s ease-in-out infinite"}} />
+      <div className="fixed -z-10 pointer-events-none" style={{top:"30%",right:"4%",width:"420px",height:"420px",borderRadius:"50%",background:"radial-gradient(ellipse,rgba(139,92,246,0.11) 0%,transparent 70%)",animation:"floatOrb 18s ease-in-out infinite 3s"}} />
+      <div className="fixed -z-10 pointer-events-none" style={{bottom:"10%",left:"30%",width:"360px",height:"360px",borderRadius:"50%",background:"radial-gradient(ellipse,rgba(71,215,255,0.09) 0%,transparent 70%)",animation:"floatOrb 22s ease-in-out infinite 7s"}} />
       <header className="sticky top-0 z-30 border-b border-white/10 bg-navy/80 backdrop-blur-xl">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
           <Link to="/" className="flex items-center gap-3">
@@ -347,13 +350,13 @@ function Landing() {
     <main>
       <section className="mx-auto grid min-h-[calc(100vh-74px)] max-w-7xl items-center gap-12 px-5 py-16 lg:grid-cols-[1fr_0.92fr]">
         <div>
-          <h1 className="max-w-4xl text-5xl font-black leading-[1.02] tracking-normal text-white md:text-7xl">
+          <h1 className="max-w-4xl text-5xl font-black leading-[1.02] tracking-normal md:text-7xl" style={{background:"linear-gradient(135deg,#ffffff 0%,#a5c8ff 50%,#47d7ff 100%)",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent",backgroundClip:"text"}}>
             Create Sellable AI Agent Products Without Coding
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-mist">
             Prompt For Profit helps you turn ideas into AI agent manuals, templates, mini-courses, workshops, and service packages you can use, share, or sell.
           </p>
-          <p className="mt-3 text-cyan">Turn prompts into agents, products, and income systems.</p>
+          <p className="mt-3 font-semibold" style={{color:"#47d7ff"}}>Turn prompts into agents, products, and income systems.</p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <button className="button button-primary" onClick={() => navigate("/generator")}>
               Start Creating <FreeIcon name="arrow" size={18} />

@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        navy: "#061A2E",
+        navy: "#0c1f3f",
         ink: "#07111F",
         electric: "#2F8CFF",
         cyan: "#47D7FF",

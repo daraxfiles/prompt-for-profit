@@ -253,7 +253,7 @@ function Shell({ children }: { children: ReactNode }) {
       <div className="fixed -z-10 pointer-events-none" style={{top:"5%",left:"3%",width:"700px",height:"700px",borderRadius:"50%",background:"radial-gradient(ellipse,rgba(47,140,255,0.50) 0%,transparent 65%)",animation:"floatOrb 14s ease-in-out infinite"}} />
       <div className="fixed -z-10 pointer-events-none" style={{top:"25%",right:"2%",width:"560px",height:"560px",borderRadius:"50%",background:"radial-gradient(ellipse,rgba(139,92,246,0.45) 0%,transparent 65%)",animation:"floatOrb 18s ease-in-out infinite 3s"}} />
       <div className="fixed -z-10 pointer-events-none" style={{bottom:"8%",left:"28%",width:"500px",height:"500px",borderRadius:"50%",background:"radial-gradient(ellipse,rgba(71,215,255,0.38) 0%,transparent 65%)",animation:"floatOrb 22s ease-in-out infinite 7s"}} />
-      <header className="sticky top-0 z-30 border-b border-white/10 backdrop-blur-xl" style={{background:"rgba(5,14,28,0.75)"}}>
+      <header className="sticky top-0 z-30 border-b border-white/10 backdrop-blur-xl" style={{background:"rgba(12,31,63,0.80)"}}>
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
           <Link to="/" className="flex items-center gap-3">
             <span className="brand-logo-shell">

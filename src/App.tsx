@@ -249,11 +249,9 @@ function Shell({ children }: { children: ReactNode }) {
   return (
     <div className="min-h-screen text-white" style={{background:"transparent"}}>
       <div className="app-ambient fixed inset-0 -z-10" />
-      <div className="fixed inset-0 -z-10 opacity-[0.04] [background-image:linear-gradient(#D8E3F0_1px,transparent_1px),linear-gradient(90deg,#D8E3F0_1px,transparent_1px)] [background-size:56px_56px]" />
-      <div className="fixed -z-10 pointer-events-none" style={{top:"5%",left:"3%",width:"700px",height:"700px",borderRadius:"50%",background:"radial-gradient(ellipse,rgba(47,140,255,0.50) 0%,transparent 65%)",animation:"floatOrb 14s ease-in-out infinite"}} />
-      <div className="fixed -z-10 pointer-events-none" style={{top:"25%",right:"2%",width:"560px",height:"560px",borderRadius:"50%",background:"radial-gradient(ellipse,rgba(139,92,246,0.45) 0%,transparent 65%)",animation:"floatOrb 18s ease-in-out infinite 3s"}} />
-      <div className="fixed -z-10 pointer-events-none" style={{bottom:"8%",left:"28%",width:"500px",height:"500px",borderRadius:"50%",background:"radial-gradient(ellipse,rgba(71,215,255,0.38) 0%,transparent 65%)",animation:"floatOrb 22s ease-in-out infinite 7s"}} />
-      <header className="sticky top-0 z-30 border-b border-white/10 backdrop-blur-xl" style={{background:"rgba(12,31,63,0.80)"}}>
+      <div className="fixed -z-10 pointer-events-none" style={{top:"0%",left:"0%",width:"800px",height:"600px",borderRadius:"50%",background:"radial-gradient(ellipse,rgba(20,80,200,0.22) 0%,transparent 65%)",animation:"floatOrb 20s ease-in-out infinite"}} />
+      <div className="fixed -z-10 pointer-events-none" style={{top:"20%",right:"0%",width:"600px",height:"500px",borderRadius:"50%",background:"radial-gradient(ellipse,rgba(60,30,160,0.16) 0%,transparent 65%)",animation:"floatOrb 26s ease-in-out infinite 5s"}} />
+      <header className="sticky top-0 z-30 border-b border-white/[0.08] backdrop-blur-xl" style={{background:"rgba(12,31,63,0.85)"}}>
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
           <Link to="/" className="flex items-center gap-3">
             <span className="brand-logo-shell">
@@ -350,14 +348,14 @@ function Landing() {
     <main>
       <section className="mx-auto grid min-h-[calc(100vh-74px)] max-w-7xl items-center gap-12 px-5 py-16 lg:grid-cols-[1fr_0.92fr]">
         <div>
-          <h1 className="max-w-4xl text-5xl font-black leading-[1.02] tracking-normal md:text-7xl" style={{background:"linear-gradient(135deg,#ffffff 0%,#a5c8ff 50%,#47d7ff 100%)",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent",backgroundClip:"text"}}>
+          <span className="eyebrow">AI Agent Products</span>
+          <h1 className="max-w-3xl font-extrabold leading-[1.04]" style={{fontSize:"clamp(2.8rem,6.5vw,5.4rem)",letterSpacing:"-0.025em",color:"#ffffff"}}>
             Create Sellable AI Agent Products Without Coding
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-mist">
+          <p className="mt-7 max-w-xl leading-8" style={{color:"rgba(255,255,255,0.60)",fontSize:"1.05rem"}}>
             Prompt For Profit helps you turn ideas into AI agent manuals, templates, mini-courses, workshops, and service packages you can use, share, or sell.
           </p>
-          <p className="mt-3 font-semibold" style={{color:"#47d7ff"}}>Turn prompts into agents, products, and income systems.</p>
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-10 flex flex-col gap-3 sm:flex-row">
             <button className="button button-primary" onClick={() => navigate("/generator")}>
               Start Creating <FreeIcon name="arrow" size={18} />
             </button>

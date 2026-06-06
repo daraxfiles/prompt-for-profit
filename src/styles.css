@@ -13,7 +13,7 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  background: #04111f;
+  background: #050e1c;
   color: #ffffff;
   font-family: "Plus Jakarta Sans", Inter, ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -23,10 +23,10 @@ body {
 
 .app-ambient {
   background:
-    radial-gradient(ellipse 80% 50% at 10% -10%, rgba(47, 140, 255, 0.22) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 40% at 90% 20%, rgba(139, 92, 246, 0.18) 0%, transparent 55%),
-    radial-gradient(ellipse 50% 60% at 50% 100%, rgba(71, 215, 255, 0.10) 0%, transparent 60%),
-    linear-gradient(180deg, #04111f 0%, #060d1a 55%, #04111f 100%);
+    radial-gradient(ellipse 80% 55% at 8% -8%, rgba(47, 140, 255, 0.42) 0%, transparent 58%),
+    radial-gradient(ellipse 65% 45% at 92% 18%, rgba(139, 92, 246, 0.34) 0%, transparent 52%),
+    radial-gradient(ellipse 55% 65% at 50% 105%, rgba(71, 215, 255, 0.22) 0%, transparent 58%),
+    linear-gradient(180deg, #050e1c 0%, #060d1c 55%, #050e1c 100%);
 }
 
 .app-ambient::before {
@@ -43,10 +43,10 @@ body {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(120deg, transparent 0%, rgba(71, 215, 255, 0.06) 42%, transparent 58%);
+    linear-gradient(120deg, transparent 0%, rgba(71, 215, 255, 0.12) 42%, transparent 58%);
   background-size: 220% 100%;
   animation: ambientSweep 18s linear infinite;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 /* Grid overlay */
@@ -119,27 +119,27 @@ select {
 }
 
 .button-primary {
-  background: linear-gradient(135deg, #2f8cff 0%, #5b9fff 45%, #47d7ff 100%);
-  color: #03080f;
-  box-shadow: 0 4px 24px rgba(47, 140, 255, 0.35), 0 1px 0 rgba(255,255,255,0.18) inset;
+  background: linear-gradient(135deg, #1a7fff 0%, #3d9dff 40%, #00d4ff 100%);
+  color: #020a14;
+  box-shadow: 0 4px 28px rgba(47, 140, 255, 0.55), 0 1px 0 rgba(255,255,255,0.22) inset;
   font-weight: 800;
 }
 
 .button-primary:hover {
-  box-shadow: 0 8px 40px rgba(47, 140, 255, 0.55), 0 1px 0 rgba(255,255,255,0.18) inset;
+  box-shadow: 0 8px 48px rgba(47, 140, 255, 0.75), 0 0 0 1px rgba(71,215,255,0.4), 0 1px 0 rgba(255,255,255,0.22) inset;
 }
 
 .button-secondary {
-  border-color: rgba(71, 215, 255, 0.28);
-  background: rgba(71, 215, 255, 0.07);
+  border-color: rgba(71, 215, 255, 0.40);
+  background: rgba(71, 215, 255, 0.10);
   color: #ffffff;
-  box-shadow: 0 0 0 1px rgba(71, 215, 255, 0.08) inset;
+  box-shadow: 0 0 0 1px rgba(71, 215, 255, 0.12) inset;
 }
 
 .button-secondary:hover {
-  border-color: rgba(71, 215, 255, 0.5);
-  background: rgba(71, 215, 255, 0.12);
-  box-shadow: 0 4px 24px rgba(71, 215, 255, 0.15);
+  border-color: rgba(71, 215, 255, 0.70);
+  background: rgba(71, 215, 255, 0.18);
+  box-shadow: 0 4px 28px rgba(71, 215, 255, 0.28);
 }
 
 .button-ghost {
@@ -196,9 +196,9 @@ select {
   place-items: center;
   overflow: hidden;
   border-radius: 10px;
-  border: 1px solid rgba(71, 215, 255, 0.35);
-  background: rgba(47, 140, 255, 0.14);
-  box-shadow: 0 0 22px rgba(47, 140, 255, 0.25), 0 0 0 1px rgba(255,255,255,0.06) inset;
+  border: 1px solid rgba(71, 215, 255, 0.55);
+  background: rgba(47, 140, 255, 0.22);
+  box-shadow: 0 0 28px rgba(47, 140, 255, 0.45), 0 0 0 1px rgba(255,255,255,0.08) inset;
 }
 
 .brand-logo-shell img {
@@ -399,12 +399,14 @@ select {
 
 .status-dot {
   border-radius: 999px;
-  background: rgba(71, 215, 255, 0.12);
+  background: rgba(71, 215, 255, 0.20);
   color: #47d7ff;
+  border: 1px solid rgba(71, 215, 255, 0.40);
   padding: 0.34rem 0.65rem;
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.02em;
+  box-shadow: 0 0 12px rgba(71, 215, 255, 0.25);
 }
 
 .preview-grid {
@@ -469,11 +471,11 @@ select {
   position: relative;
   overflow: hidden;
   border-radius: 16px;
-  border: 1px solid rgba(71, 215, 255, 0.18);
+  border: 1px solid rgba(71, 215, 255, 0.35);
   background:
-    linear-gradient(145deg, rgba(47, 140, 255, 0.12) 0%, rgba(139, 92, 246, 0.08) 50%, rgba(4, 17, 31, 0.80) 100%);
+    linear-gradient(145deg, rgba(47, 140, 255, 0.20) 0%, rgba(139, 92, 246, 0.14) 50%, rgba(5, 14, 28, 0.88) 100%);
   padding: 1.4rem;
-  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.36), 0 1px 0 rgba(255,255,255,0.06) inset;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.36), 0 0 60px rgba(47, 140, 255, 0.08) inset, 0 1px 0 rgba(255,255,255,0.08) inset;
 }
 
 .immersion-lab::before {
@@ -661,9 +663,9 @@ select {
   display: block;
   height: 100%;
   border-radius: inherit;
-  background: linear-gradient(90deg, #2f8cff, #8b5cf6, #47d7ff);
+  background: linear-gradient(90deg, #1a7fff, #8b5cf6, #00d4ff);
   transition: width 280ms cubic-bezier(0.34, 1.56, 0.64, 1);
-  box-shadow: 0 0 10px rgba(71, 215, 255, 0.4);
+  box-shadow: 0 0 16px rgba(71, 215, 255, 0.65);
 }
 
 .stage-details {
@@ -723,8 +725,8 @@ select {
 
 .type-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(71, 215, 255, 0.32);
-  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.36), 0 0 0 1px rgba(71, 215, 255, 0.14) inset;
+  border-color: rgba(71, 215, 255, 0.55);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.36), 0 0 32px rgba(71, 215, 255, 0.18), 0 0 0 1px rgba(71, 215, 255, 0.20) inset;
 }
 
 .type-card .free-icon,
@@ -757,8 +759,8 @@ select {
 
 .step-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(139, 92, 246, 0.30);
-  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.32), 0 0 0 1px rgba(139, 92, 246, 0.10) inset;
+  border-color: rgba(139, 92, 246, 0.55);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.32), 0 0 28px rgba(139, 92, 246, 0.20), 0 0 0 1px rgba(139, 92, 246, 0.16) inset;
 }
 
 .step-card span {
@@ -767,12 +769,12 @@ select {
   width: 36px;
   place-items: center;
   border-radius: 9px;
-  background: linear-gradient(135deg, rgba(47, 140, 255, 0.25), rgba(139, 92, 246, 0.20));
-  border: 1px solid rgba(71, 215, 255, 0.22);
+  background: linear-gradient(135deg, rgba(47, 140, 255, 0.45), rgba(139, 92, 246, 0.40));
+  border: 1px solid rgba(71, 215, 255, 0.50);
   font-weight: 900;
-  color: #47d7ff;
+  color: #e0f4ff;
   font-size: 0.95rem;
-  box-shadow: 0 0 12px rgba(47, 140, 255, 0.20);
+  box-shadow: 0 0 18px rgba(47, 140, 255, 0.40);
 }
 
 .step-card h3 {
@@ -1003,10 +1005,10 @@ select {
   justify-content: space-between;
   gap: 1.5rem;
   border-radius: 16px;
-  border: 1px solid rgba(71, 215, 255, 0.20);
-  background: linear-gradient(135deg, rgba(47, 140, 255, 0.16) 0%, rgba(139, 92, 246, 0.12) 50%, rgba(71, 215, 255, 0.08) 100%);
+  border: 1px solid rgba(71, 215, 255, 0.38);
+  background: linear-gradient(135deg, rgba(47, 140, 255, 0.26) 0%, rgba(139, 92, 246, 0.20) 50%, rgba(71, 215, 255, 0.14) 100%);
   padding: 2.5rem 2rem;
-  box-shadow: 0 0 60px rgba(47, 140, 255, 0.10) inset, 0 1px 0 rgba(255,255,255,0.06) inset;
+  box-shadow: 0 0 80px rgba(47, 140, 255, 0.18) inset, 0 1px 0 rgba(255,255,255,0.10) inset;
   position: relative;
   overflow: hidden;
 }
@@ -1163,21 +1165,22 @@ select {
   display: block;
   height: 100%;
   border-radius: inherit;
-  background: linear-gradient(90deg, #2f8cff, #8b5cf6, #47d7ff);
-  box-shadow: 0 0 8px rgba(71, 215, 255, 0.35);
+  background: linear-gradient(90deg, #1a7fff, #8b5cf6, #00d4ff);
+  box-shadow: 0 0 14px rgba(71, 215, 255, 0.55);
 }
 
 .pill {
   display: inline-flex;
   align-items: center;
   border-radius: 999px;
-  border: 1px solid rgba(71, 215, 255, 0.26);
-  background: rgba(71, 215, 255, 0.08);
-  color: #47d7ff;
+  border: 1px solid rgba(71, 215, 255, 0.45);
+  background: rgba(71, 215, 255, 0.12);
+  color: #5ee8ff;
   padding: 0.28rem 0.62rem;
   font-size: 0.75rem;
   font-weight: 800;
   letter-spacing: 0.02em;
+  box-shadow: 0 0 10px rgba(71, 215, 255, 0.15);
 }
 
 .empty-state {

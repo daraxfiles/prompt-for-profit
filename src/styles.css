@@ -23,9 +23,10 @@ body {
 
 .app-ambient {
   background:
-    radial-gradient(ellipse 80% 55% at 8% -8%, rgba(47, 140, 255, 0.42) 0%, transparent 58%),
-    radial-gradient(ellipse 65% 45% at 92% 18%, rgba(139, 92, 246, 0.34) 0%, transparent 52%),
-    radial-gradient(ellipse 55% 65% at 50% 105%, rgba(71, 215, 255, 0.22) 0%, transparent 58%),
+    radial-gradient(ellipse 90% 60% at 5% -5%, rgba(47, 140, 255, 0.72) 0%, transparent 55%),
+    radial-gradient(ellipse 70% 50% at 95% 15%, rgba(139, 92, 246, 0.62) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 70% at 50% 110%, rgba(71, 215, 255, 0.45) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 40% at 20% 80%, rgba(47, 140, 255, 0.30) 0%, transparent 50%),
     linear-gradient(180deg, #050e1c 0%, #060d1c 55%, #050e1c 100%);
 }
 

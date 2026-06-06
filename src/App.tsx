@@ -247,13 +247,13 @@ function Shell({ children }: { children: ReactNode }) {
   }
 
   return (
-    <div className="min-h-screen bg-navy text-white">
+    <div className="min-h-screen text-white" style={{background:"transparent"}}>
       <div className="app-ambient fixed inset-0 -z-10" />
       <div className="fixed inset-0 -z-10 opacity-[0.04] [background-image:linear-gradient(#D8E3F0_1px,transparent_1px),linear-gradient(90deg,#D8E3F0_1px,transparent_1px)] [background-size:56px_56px]" />
-      <div className="fixed -z-10 pointer-events-none" style={{top:"8%",left:"5%",width:"580px",height:"580px",borderRadius:"50%",background:"radial-gradient(ellipse,rgba(47,140,255,0.28) 0%,transparent 68%)",animation:"floatOrb 14s ease-in-out infinite"}} />
-      <div className="fixed -z-10 pointer-events-none" style={{top:"30%",right:"4%",width:"460px",height:"460px",borderRadius:"50%",background:"radial-gradient(ellipse,rgba(139,92,246,0.24) 0%,transparent 68%)",animation:"floatOrb 18s ease-in-out infinite 3s"}} />
-      <div className="fixed -z-10 pointer-events-none" style={{bottom:"10%",left:"30%",width:"400px",height:"400px",borderRadius:"50%",background:"radial-gradient(ellipse,rgba(71,215,255,0.18) 0%,transparent 68%)",animation:"floatOrb 22s ease-in-out infinite 7s"}} />
-      <header className="sticky top-0 z-30 border-b border-white/10 bg-navy/80 backdrop-blur-xl">
+      <div className="fixed -z-10 pointer-events-none" style={{top:"5%",left:"3%",width:"700px",height:"700px",borderRadius:"50%",background:"radial-gradient(ellipse,rgba(47,140,255,0.50) 0%,transparent 65%)",animation:"floatOrb 14s ease-in-out infinite"}} />
+      <div className="fixed -z-10 pointer-events-none" style={{top:"25%",right:"2%",width:"560px",height:"560px",borderRadius:"50%",background:"radial-gradient(ellipse,rgba(139,92,246,0.45) 0%,transparent 65%)",animation:"floatOrb 18s ease-in-out infinite 3s"}} />
+      <div className="fixed -z-10 pointer-events-none" style={{bottom:"8%",left:"28%",width:"500px",height:"500px",borderRadius:"50%",background:"radial-gradient(ellipse,rgba(71,215,255,0.38) 0%,transparent 65%)",animation:"floatOrb 22s ease-in-out infinite 7s"}} />
+      <header className="sticky top-0 z-30 border-b border-white/10 backdrop-blur-xl" style={{background:"rgba(5,14,28,0.75)"}}>
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
           <Link to="/" className="flex items-center gap-3">
             <span className="brand-logo-shell">

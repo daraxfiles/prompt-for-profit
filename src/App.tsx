@@ -398,7 +398,7 @@ function Landing() {
           </div>
         </div>
       </section>
-      <section className="mx-auto max-w-7xl px-5 py-20">
+      <section className="mx-auto max-w-7xl px-5 py-14">
         <div className="relational-strip">
           <img src={studioImages.dashboard} alt="Business team looking over a city" />
           <div>
@@ -411,7 +411,7 @@ function Landing() {
       <ProductTypes />
       <HowItWorks />
       <UseCases />
-      <section className="mx-auto max-w-7xl px-5 py-28">
+      <section className="mx-auto max-w-7xl px-5 py-16">
         <div className="cta-band">
           <h2 style={{fontFamily:"'DM Serif Display', serif", fontWeight:400}}>Ready to turn your AI agent idea into a product?</h2>
           <button className="button button-primary" onClick={() => navigate("/generator")}>
@@ -431,7 +431,7 @@ function ImmersiveStudio() {
   const progress = `${((stageIndex + 1) / studioStages.length) * 100}%`;
 
   return (
-    <section className="mx-auto max-w-7xl px-5 py-28">
+    <section className="mx-auto max-w-7xl px-5 py-16">
       <div className="immersion-lab">
         <div className="immersion-copy">
           <h2 style={{fontFamily:"'DM Serif Display', serif", fontWeight:400}}>Choose your creation path</h2>
@@ -498,7 +498,7 @@ function ProductTypes() {
     api.meta().then((data) => setTypes(data.productTypes));
   }, []);
   return (
-    <section id="product-types" className="mx-auto max-w-7xl px-5 py-28">
+    <section id="product-types" className="mx-auto max-w-7xl px-5 py-16">
       <SectionTitle eyebrow="What You Can Build" title="Product Types" text="Five ways to package an AI agent idea into something useful, teachable, and sellable." />
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-5">
         {types.map((type, index) => {
@@ -518,7 +518,7 @@ function ProductTypes() {
 
 function HowItWorks() {
   return (
-    <section className="mx-auto max-w-7xl px-5 py-28">
+    <section className="mx-auto max-w-7xl px-5 py-16">
       <SectionTitle eyebrow="The Process" title="How It Works" text="A simple guided flow keeps beginners moving without staring at a blank page." />
       <div className="grid gap-4 md:grid-cols-4">
         {["Choose a product type", "Describe your idea or audience", "Generate a structured product draft", "Edit, export, and sell"].map((step, index) => (
@@ -639,7 +639,7 @@ function UseCases() {
     "Build a grant writing assistant"
   ];
   return (
-    <section className="mx-auto max-w-7xl px-5 py-28">
+    <section className="mx-auto max-w-7xl px-5 py-16">
       <SectionTitle eyebrow="Examples" title="Use Cases" text="Start with a practical workflow, then turn it into an asset buyers can understand fast." />
       <div className="grid gap-3 md:grid-cols-3">
         {cases.map((item) => (

@@ -249,8 +249,8 @@ function Shell({ children }: { children: ReactNode }) {
   return (
     <div className="min-h-screen text-white" style={{background:"transparent"}}>
       <div className="app-ambient fixed inset-0 -z-10" />
-      <div className="fixed -z-10 pointer-events-none" style={{top:"0%",left:"0%",width:"800px",height:"600px",borderRadius:"50%",background:"radial-gradient(ellipse,rgba(20,80,200,0.22) 0%,transparent 65%)",animation:"floatOrb 20s ease-in-out infinite"}} />
-      <div className="fixed -z-10 pointer-events-none" style={{top:"20%",right:"0%",width:"600px",height:"500px",borderRadius:"50%",background:"radial-gradient(ellipse,rgba(60,30,160,0.16) 0%,transparent 65%)",animation:"floatOrb 26s ease-in-out infinite 5s"}} />
+      <div className="fixed -z-10 pointer-events-none" style={{top:"0%",left:"0%",width:"800px",height:"600px",borderRadius:"50%",background:"radial-gradient(ellipse,rgba(255,255,255,0.03) 0%,transparent 65%)",animation:"floatOrb 20s ease-in-out infinite"}} />
+      <div className="fixed -z-10 pointer-events-none" style={{top:"20%",right:"0%",width:"600px",height:"500px",borderRadius:"50%",background:"radial-gradient(ellipse,rgba(255,255,255,0.02) 0%,transparent 65%)",animation:"floatOrb 26s ease-in-out infinite 5s"}} />
       <header className="sticky top-0 z-30 border-b border-white/[0.08] backdrop-blur-xl" style={{background:"rgba(0,13,16,0.85)"}}>
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
           <Link to="/" className="flex items-center gap-3">
@@ -694,7 +694,7 @@ function AuthPage({ mode }: { mode: "login" | "register" }) {
         </button>
         <p className="mt-5 text-center text-sm text-mist/75">
           {mode === "register" ? "Already have an account?" : "Need an account?"}{" "}
-          <Link className="text-cyan" to={mode === "register" ? "/login" : "/register"}>
+          <Link className="text-white underline" to={mode === "register" ? "/login" : "/register"}>
             {mode === "register" ? "Log in" : "Sign up"}
           </Link>
         </p>
@@ -932,7 +932,7 @@ function Generator() {
             <img className="sidebar-photo" src={studioImages.generator} alt="Student using laptop" />
             <h2>{selected?.label || "Product Type"}</h2>
             <p className="mt-2 text-sm leading-6 text-mist/80">{selected?.short}</p>
-            <p className="mt-4 rounded-lg border border-cyan/20 bg-cyan/10 p-3 text-sm text-cyan">{selected?.price}</p>
+            <p className="mt-4 rounded-lg border border-white/10 bg-white/5 p-3 text-sm text-white/70">{selected?.price}</p>
             <h3 className="mt-6 text-sm font-semibold uppercase tracking-[0.18em] text-mist/60">Example Ideas</h3>
             <ul className="mt-3 space-y-2 text-sm text-mist/80">
               {selected?.examples.slice(0, 6).map((item) => <li key={item}>{item}</li>)}
@@ -1098,7 +1098,7 @@ ${promptSection?.body.slice(0, 520) || "No system prompt section found yet. Add 
             </select>
           </label>
           <SellabilityScore score={score} />
-          {message && <p className="text-sm text-cyan">{message}</p>}
+          {message && <p className="text-sm text-white/60">{message}</p>}
         </aside>
         <section className="document-editor">
           <div className="document-header">
@@ -1342,7 +1342,7 @@ function Disclaimer() {
       <p className="rounded-lg border border-white/10 bg-white/[0.04] p-4 text-sm text-mist/75">
         Prompt For Profit helps users create educational and business planning materials. Users should review, edit, and verify all generated content before selling or publishing it.
         <span className="mt-2 block">
-          Interface icons by <a className="text-cyan" href="https://freeicons.io" target="_blank" rel="noreferrer">Freeicons.io</a>.
+          Interface icons by <a className="text-white/50 underline" href="https://freeicons.io" target="_blank" rel="noreferrer">Freeicons.io</a>.
         </span>
       </p>
     </div>

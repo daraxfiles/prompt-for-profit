@@ -7,8 +7,8 @@ export default {
       colors: {
         navy: "#000D10",
         ink: "#07111F",
-        electric: "#2F8CFF",
-        cyan: "#47D7FF",
+        electric: "#ffffff",
+        cyan: "#ffffff",
         mist: "#D8E3F0"
       },
       boxShadow: {

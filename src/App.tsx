@@ -37,7 +37,7 @@ type FreeIconName = keyof typeof freeIconUrls;
 const typeIcons: FreeIconName[] = ["document", "bot", "library", "rocket", "layers"];
 
 const studioImages = {
-  hero: "/images/desola-lanre-ologun-kwzWjTnDPLk-unsplash.jpg",
+  hero: "/images/christina-wocintechchat-meeting.jpg",
   dashboard: "/images/charles-forerunner-3fPXt37X6UQ-unsplash.jpg",
   generator: "/images/seth-ebenezer-tetteh-DeqswsZEO3Y-unsplash.jpg",
   library: "/images/sincerely-media-os7rk_Lh-XY-unsplash.jpg",

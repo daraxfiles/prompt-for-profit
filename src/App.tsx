@@ -38,6 +38,7 @@ const typeIcons: FreeIconName[] = ["document", "bot", "library", "rocket", "laye
 
 const studioImages = {
   hero: "/images/christina-wocintechchat-meeting.jpg",
+  heroTop: "/images/desola-lanre-ologun-kwzWjTnDPLk-unsplash.jpg",
   dashboard: "/images/charles-forerunner-3fPXt37X6UQ-unsplash.jpg",
   generator: "/images/seth-ebenezer-tetteh-DeqswsZEO3Y-unsplash.jpg",
   library: "/images/sincerely-media-os7rk_Lh-XY-unsplash.jpg",
@@ -366,7 +367,7 @@ function Landing() {
         </div>
         <div className="hero-stack-column">
           <div className="hero-media-stack">
-            <img className="hero-photo" src={studioImages.hero} alt="Creators collaborating at computers" />
+            <img className="hero-photo" src={studioImages.heroTop} alt="Creators collaborating at computers" />
             <div className="hero-photo-card">
               <img src={studioImages.prompt} alt="Phone and laptop workspace" />
               <span>Built for everyday creators</span>

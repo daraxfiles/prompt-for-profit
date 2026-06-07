@@ -58,7 +58,7 @@ select {
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.60);
+  color: #C8D8E6;
   margin-bottom: 1.4rem;
 }
 
@@ -370,7 +370,7 @@ select {
 .status-dot {
   border-radius: 4px;
   background: rgba(74, 144, 255, 0.18);
-  color: rgba(255,255,255,0.60);
+  color: #C8D8E6;
   border: 1px solid rgba(74, 144, 255, 0.32);
   padding: 0.28rem 0.60rem;
   font-size: 0.74rem;
@@ -559,7 +559,7 @@ select {
 
 .stage-overlay span,
 .stage-details span {
-  color: rgba(255,255,255,0.60);
+  color: #C8D8E6;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -599,7 +599,7 @@ select {
 }
 
 .journey-map span {
-  color: rgba(255,255,255,0.60);
+  color: #C8D8E6;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -616,7 +616,7 @@ select {
   display: block;
   height: 100%;
   border-radius: inherit;
-  background: rgba(255,255,255,0.90);
+  background: #C8D8E6;
   transition: width 280ms cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
@@ -683,7 +683,7 @@ select {
 
 .type-card .free-icon,
 .step-card span {
-  color: rgba(255,255,255,0.60);
+  color: #C8D8E6;
 }
 
 .type-card h3,
@@ -724,7 +724,7 @@ select {
   background: rgba(74, 144, 255, 0.18);
   border: 1px solid rgba(74, 144, 255, 0.32);
   font-weight: 800;
-  color: rgba(255,255,255,0.60);
+  color: #C8D8E6;
   font-size: 0.90rem;
 }
 
@@ -846,7 +846,7 @@ select {
 }
 
 .vibe-label {
-  color: rgba(255,255,255,0.60);
+  color: #C8D8E6;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -877,7 +877,7 @@ select {
   border-radius: 6px;
   background: rgba(74, 144, 255, 0.16);
   border: 1px solid rgba(74, 144, 255, 0.28);
-  color: rgba(255,255,255,0.60);
+  color: #C8D8E6;
   font-weight: 800;
   font-size: 0.82rem;
 }
@@ -1028,7 +1028,7 @@ select {
 }
 
 .canvas-stage span {
-  color: rgba(255,255,255,0.60);
+  color: #C8D8E6;
   font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -1116,7 +1116,7 @@ select {
   display: block;
   height: 100%;
   border-radius: inherit;
-  background: rgba(255,255,255,0.90);
+  background: #C8D8E6;
 }
 
 .pill {
@@ -1270,7 +1270,7 @@ select {
   display: flex;
   align-items: center;
   gap: 0.65rem;
-  color: rgba(255,255,255,0.60);
+  color: #C8D8E6;
 }
 
 .score-ring span {
@@ -1543,7 +1543,7 @@ select {
 }
 
 .scorecard p {
-  color: rgba(255,255,255,0.60);
+  color: #C8D8E6;
   font-size: 0.85rem;
 }
 

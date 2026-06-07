@@ -499,32 +499,35 @@ function ProductTypes() {
   }, []);
   return (
     <section id="product-types" className="mx-auto max-w-7xl px-5 py-16">
-      <SectionTitle eyebrow="What You Can Build" title="Product Types" text="Five ways to package an AI agent idea into something useful, teachable, and sellable." />
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-5">
-        {types.map((type, index) => {
-          const icon = typeIcons[index] || "document";
-          return (
-            <Link to={`/generator?type=${type.id}`} className="type-card" key={type.id}>
-              <FreeIcon name={icon} size={25} />
-              <h3>{type.label}</h3>
-              <p>{type.short}</p>
-            </Link>
-          );
-        })}
+      <h2 className="editorial-heading">Five ways to package an AI agent idea into something sellable.</h2>
+      <div className="editorial-grid">
+        {types.map((type) => (
+          <Link to={`/generator?type=${type.id}`} className="editorial-item" key={type.id}>
+            <strong>{type.label}</strong>
+            <p>{type.short}</p>
+          </Link>
+        ))}
       </div>
     </section>
   );
 }
 
+const howItWorksSteps: { label: string; desc: string }[] = [
+  { label: "Choose a product type", desc: "Pick from manual, template, mini-course, workshop, or service package — based on how you want to deliver value." },
+  { label: "Describe your idea or audience", desc: "Tell the generator who this is for and what problem it solves. No coding knowledge needed." },
+  { label: "Generate a structured draft", desc: "The AI builds a complete, structured product document you can edit section by section." },
+  { label: "Edit, export, and sell", desc: "Refine the draft, export as PDF or DOCX, and start selling or sharing your finished product." },
+];
+
 function HowItWorks() {
   return (
     <section className="mx-auto max-w-7xl px-5 py-16">
-      <SectionTitle eyebrow="The Process" title="How It Works" text="A simple guided flow keeps beginners moving without staring at a blank page." />
-      <div className="grid gap-4 md:grid-cols-4">
-        {["Choose a product type", "Describe your idea or audience", "Generate a structured product draft", "Edit, export, and sell"].map((step, index) => (
-          <div className="step-card" key={step}>
-            <span>{index + 1}</span>
-            <h3>{step}</h3>
+      <h2 className="editorial-heading">A simple guided flow from idea to sellable product.</h2>
+      <div className="editorial-grid">
+        {howItWorksSteps.map((step) => (
+          <div className="editorial-item" key={step.label}>
+            <strong>{step.label}</strong>
+            <p>{step.desc}</p>
           </div>
         ))}
       </div>
@@ -629,23 +632,24 @@ function VibeCoding() {
   );
 }
 
+const useCaseItems: { label: string; desc: string }[] = [
+  { label: "Customer service reply agent", desc: "Package standard reply patterns into a prompt kit businesses can train on and resell." },
+  { label: "Lesson plan generator", desc: "Teachers and tutors turn their curriculum expertise into a structured AI product for other educators." },
+  { label: "Resume review agent", desc: "Career coaches productise their feedback framework as a guided AI tool for job seekers." },
+  { label: "Business idea validator", desc: "Entrepreneurs package a lean validation checklist into an AI-powered decision tool." },
+  { label: "Social media content agent", desc: "Content creators build a prompt-driven workflow for generating on-brand posts and captions." },
+  { label: "Grant writing assistant", desc: "Nonprofit specialists turn their application expertise into a step-by-step AI writing guide." },
+];
+
 function UseCases() {
-  const cases = [
-    "Create a customer service reply agent",
-    "Build a lesson plan agent",
-    "Package a resume review agent",
-    "Create a business idea validator",
-    "Design a social media content agent",
-    "Build a grant writing assistant"
-  ];
   return (
     <section className="mx-auto max-w-7xl px-5 py-16">
-      <SectionTitle eyebrow="Examples" title="Use Cases" text="Start with a practical workflow, then turn it into an asset buyers can understand fast." />
-      <div className="grid gap-3 md:grid-cols-3">
-        {cases.map((item) => (
-          <div className="use-case" key={item}>
-            <FreeIcon name="check" size={18} />
-            {item}
+      <h2 className="editorial-heading">Real workflows turned into assets people will pay for.</h2>
+      <div className="editorial-grid">
+        {useCaseItems.map((item) => (
+          <div className="editorial-item" key={item.label}>
+            <strong>{item.label}</strong>
+            <p>{item.desc}</p>
           </div>
         ))}
       </div>

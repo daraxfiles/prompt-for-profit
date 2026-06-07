@@ -111,12 +111,12 @@ select {
 
 .button-secondary:hover {
   border-color: rgba(0,13,16,0.62);
-  background: rgba(255,255,255,0.45);
+  background: rgba(0,13,16,0.06);
 }
 
 .button-ghost {
-  border-color: rgba(255, 255, 255, 0.14);
-  background: rgba(255,255,255,0.55);
+  border-color: rgba(0,13,16,0.12);
+  background: rgba(255,255,255,0.72);
   color: rgba(0,13,16,0.70);
 }
 
@@ -190,13 +190,13 @@ select {
   place-items: center;
   border-radius: 8px;
   border: 1px solid rgba(0,13,16,0.14);
-  background: rgba(255,255,255,0.55);
+  background: rgba(255,255,255,0.72);
   color: rgba(0,13,16,0.70);
   transition: background 180ms ease, border-color 180ms ease;
 }
 
 .icon-button:hover {
-  background: rgba(255,255,255,0.60);
+  background: rgba(255,255,255,0.75);
   border-color: rgba(0,13,16,0.18);
 }
 
@@ -215,7 +215,7 @@ select {
 
 .nav-link:hover {
   color: #000D10;
-  background: rgba(255,255,255,0.40);
+  background: rgba(0,13,16,0.05);
 }
 
 .mobile-nav-panel {
@@ -241,7 +241,7 @@ select {
 .editor-tools {
   border: 1px solid rgba(0,13,16,0.12);
   border-radius: 10px;
-  background: rgba(255,255,255,0.55);
+  background: rgba(255,255,255,0.72);
 }
 
 .studio-preview {
@@ -389,13 +389,13 @@ select {
   min-height: 150px;
   border-radius: 8px;
   border: 1px solid rgba(0,13,16,0.09);
-  background: rgba(255,255,255,0.40);
+  background: rgba(0,13,16,0.05);
   padding: 1rem;
   transition: border-color 200ms ease;
 }
 
 .metric-panel:hover {
-  border-color: rgba(255, 255, 255, 0.18);
+  border-color: rgba(0,13,16,0.14);
 }
 
 .metric-panel strong,
@@ -439,7 +439,7 @@ select {
   overflow: hidden;
   border-radius: 10px;
   border: 1px solid rgba(0,13,16,0.12);
-  background: rgba(255,255,255,0.45);
+  background: rgba(0,13,16,0.06);
   padding: 2rem;
 }
 
@@ -490,7 +490,7 @@ select {
 .journey-map button {
   border-radius: 5px;
   border: 1px solid rgba(0,13,16,0.14);
-  background: rgba(255,255,255,0.55);
+  background: rgba(255,255,255,0.72);
   color: rgba(0,13,16,0.62);
   font-weight: 600;
   letter-spacing: 0.01em;
@@ -577,7 +577,7 @@ select {
   align-content: start;
   border-radius: 8px;
   border: 1px solid rgba(0,13,16,0.12);
-  background: rgba(255,255,255,0.40);
+  background: rgba(0,13,16,0.05);
   padding: 1.2rem;
 }
 
@@ -606,7 +606,7 @@ select {
   height: 2px;
   overflow: hidden;
   border-radius: 999px;
-  background: rgba(255,255,255,0.60);
+  background: rgba(255,255,255,0.75);
 }
 
 .journey-progress i {
@@ -621,7 +621,7 @@ select {
   display: grid;
   gap: 0.8rem;
   border-radius: 7px;
-  background: rgba(255,255,255,0.55);
+  background: rgba(255,255,255,0.72);
   border: 1px solid rgba(0,13,16,0.09);
   padding: 1rem;
 }
@@ -651,7 +651,7 @@ select {
 .tool-row span {
   border-radius: 4px;
   border: 1px solid rgba(0,13,16,0.14);
-  background: rgba(255,255,255,0.55);
+  background: rgba(255,255,255,0.72);
   color: rgba(0,13,16,0.65);
   padding: 0.32rem 0.58rem;
   font-size: 0.80rem;
@@ -791,7 +791,7 @@ select {
 
 .product-card:hover {
   transform: translateY(-2px);
-  border-color: rgba(255, 255, 255, 0.20);
+  border-color: rgba(0,13,16,0.15);
 }
 
 /* ─── Use Cases ───────────────────────────────────────────────────────── */
@@ -804,13 +804,13 @@ select {
   border: 1px solid rgba(255, 255, 255, 0.09);
   background: rgba(255, 255, 255, 0.03);
   padding: 1rem;
-  color: rgba(255, 255, 255, 0.80);
+  color: rgba(0,13,16,0.72);
   transition: border-color 180ms ease, background 180ms ease;
 }
 
 .use-case:hover {
-  border-color: rgba(255, 255, 255, 0.18);
-  background: rgba(255,255,255,0.40);
+  border-color: rgba(0,13,16,0.14);
+  background: rgba(0,13,16,0.05);
 }
 
 .use-case .free-icon {
@@ -843,7 +843,7 @@ select {
   height: 170px;
   border-radius: 8px;
   object-fit: contain;
-  background: rgba(255,255,255,0.40);
+  background: rgba(0,13,16,0.05);
 }
 
 .vibe-intro h2 {
@@ -872,7 +872,7 @@ select {
 .vibe-idea-lab {
   border-radius: 8px;
   border: 1px solid rgba(0,13,16,0.12);
-  background: rgba(255,255,255,0.55);
+  background: rgba(255,255,255,0.72);
   padding: 1.4rem;
 }
 
@@ -888,7 +888,7 @@ select {
 .vibe-panel p,
 .vibe-idea-lab p {
   margin-top: 0.75rem;
-  color: rgba(255, 255, 255, 0.56);
+  color: rgba(0,13,16,0.52);
   line-height: 1.70;
 }
 
@@ -947,7 +947,7 @@ select {
 .vibe-tool-cloud span {
   border-radius: 4px;
   border: 1px solid rgba(0,13,16,0.14);
-  background: rgba(255,255,255,0.55);
+  background: rgba(255,255,255,0.72);
   color: rgba(0,13,16,0.65);
   padding: 0.40rem 0.62rem;
   font-size: 0.82rem;
@@ -956,7 +956,7 @@ select {
 }
 
 .vibe-tool-cloud span:hover {
-  border-color: rgba(255, 255, 255, 0.28);
+  border-color: rgba(0,13,16,0.20);
   background: rgba(255, 255, 255, 0.09);
   color: #000D10;
 }
@@ -982,13 +982,13 @@ select {
 .vibe-ideas article {
   border-radius: 7px;
   border: 1px solid rgba(255, 255, 255, 0.09);
-  background: rgba(255,255,255,0.45);
+  background: rgba(0,13,16,0.06);
   padding: 0.9rem;
   transition: border-color 180ms ease;
 }
 
 .vibe-ideas article:hover {
-  border-color: rgba(255, 255, 255, 0.18);
+  border-color: rgba(0,13,16,0.14);
 }
 
 .vibe-ideas p {
@@ -1004,7 +1004,7 @@ select {
   gap: 2rem;
   border-radius: 8px;
   border: 1px solid rgba(0,13,16,0.14);
-  background: rgba(255,255,255,0.55);
+  background: rgba(255,255,255,0.72);
   padding: 3rem 2.5rem;
   position: relative;
   overflow: hidden;
@@ -1064,7 +1064,7 @@ select {
   gap: 0.35rem;
   border-radius: 7px;
   border: 1px solid rgba(255, 255, 255, 0.09);
-  background: rgba(255,255,255,0.40);
+  background: rgba(0,13,16,0.05);
   padding: 1rem;
   transition: border-color 200ms ease, background 200ms ease;
 }
@@ -1102,7 +1102,7 @@ select {
   border: 1px solid rgba(255, 255, 255, 0.12);
   background: rgba(0, 0, 0, 0.28);
   padding: 0.7rem 0.9rem;
-  color: rgba(255, 255, 255, 0.80);
+  color: rgba(0,13,16,0.72);
   width: min(100%, 360px);
 }
 
@@ -1136,7 +1136,7 @@ select {
   justify-content: space-between;
   gap: 1rem;
   margin-top: 1rem;
-  color: rgba(255, 255, 255, 0.40);
+  color: rgba(0,13,16,0.38);
   font-size: 0.82rem;
 }
 
@@ -1155,7 +1155,7 @@ select {
   height: 3px;
   overflow: hidden;
   border-radius: 999px;
-  background: rgba(255,255,255,0.60);
+  background: rgba(255,255,255,0.75);
 }
 
 .mini-score i,
@@ -1198,7 +1198,7 @@ select {
 }
 
 .field span {
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(0,13,16,0.65);
   font-size: 0.86rem;
   font-weight: 600;
 }
@@ -1244,7 +1244,7 @@ select {
   gap: 0.5rem;
   border-radius: 6px;
   border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(255,255,255,0.55);
+  background: rgba(255,255,255,0.72);
   color: rgba(0,13,16,0.60);
   padding: 0.60rem 0.80rem;
   font-weight: 600;
@@ -1303,7 +1303,7 @@ select {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: rgba(255, 255, 255, 0.80);
+  color: rgba(0,13,16,0.72);
 }
 
 .blueprint-top span {
@@ -1321,7 +1321,7 @@ select {
 }
 
 .score-ring span {
-  color: rgba(255, 255, 255, 0.80);
+  color: rgba(0,13,16,0.72);
   font-size: 0.9rem;
 }
 
@@ -1342,7 +1342,7 @@ select {
   border-radius: 6px;
   background: rgba(0, 0, 0, 0.24);
   padding: 0.8rem;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(0,13,16,0.68);
   line-height: 1.52;
 }
 
@@ -1370,7 +1370,7 @@ select {
   gap: 0.35rem;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.11);
-  background: rgba(255,255,255,0.55);
+  background: rgba(255,255,255,0.72);
   padding: 1rem;
   text-align: left;
   color: #000D10;
@@ -1585,7 +1585,7 @@ select {
   grid-template-columns: auto 1fr auto;
   gap: 0.45rem;
   align-items: center;
-  color: rgba(255, 255, 255, 0.82);
+  color: rgba(0,13,16,0.75);
   font-weight: 700;
 }
 

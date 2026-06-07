@@ -247,7 +247,7 @@ function Shell({ children }: { children: ReactNode }) {
   }
 
   return (
-    <div className="min-h-screen text-white" style={{background:"transparent"}}>
+    <div className="min-h-screen text-navy" style={{background:"transparent"}}>
       <div className="app-ambient fixed inset-0 -z-10" />
       <div className="fixed -z-10 pointer-events-none" style={{top:"0%",left:"0%",width:"800px",height:"600px",borderRadius:"50%",background:"radial-gradient(ellipse,rgba(255,255,255,0.03) 0%,transparent 65%)",animation:"floatOrb 20s ease-in-out infinite"}} />
       <div className="fixed -z-10 pointer-events-none" style={{top:"20%",right:"0%",width:"600px",height:"500px",borderRadius:"50%",background:"radial-gradient(ellipse,rgba(255,255,255,0.02) 0%,transparent 65%)",animation:"floatOrb 26s ease-in-out infinite 5s"}} />
@@ -279,7 +279,7 @@ function Shell({ children }: { children: ReactNode }) {
             </button>
             {user ? (
               <>
-                <span className="hidden text-sm text-mist/80 sm:block">{user.name}</span>
+                <span className="hidden text-sm text-navy/65 sm:block">{user.name}</span>
                 <button className="icon-button" onClick={logout} title="Log out">
                   <FreeIcon name="logout" size={17} />
                 </button>
@@ -327,7 +327,7 @@ function Protected({ children }: { children: ReactNode }) {
 function LoadingScreen() {
   return (
     <main className="grid min-h-[70vh] place-items-center">
-      <div className="rounded-lg border border-white/10 bg-white/[0.06] px-6 py-4 text-mist">Loading studio...</div>
+      <div className="rounded-lg border border-navy/10 bg-navy/[0.04] px-6 py-4 text-navy/70">Loading studio...</div>
     </main>
   );
 }
@@ -352,7 +352,7 @@ function Landing() {
           <h1 className="max-w-3xl leading-[1.04]" style={{fontFamily:"'DM Serif Display', serif",fontSize:"clamp(3rem,7vw,5.8rem)",fontWeight:400,letterSpacing:"-0.02em",color:"#000D10"}}>
             Create Sellable AI Agent Products Without Coding
           </h1>
-          <p className="mt-7 max-w-xl leading-8" style={{color:"rgba(255,255,255,0.60)",fontSize:"1.05rem"}}>
+          <p className="mt-7 max-w-xl leading-8" style={{color:"rgba(0,13,16,0.62)",fontSize:"1.05rem"}}>
             Prompt For Profit helps you turn ideas into AI agent manuals, templates, mini-courses, workshops, and service packages you can use, share, or sell.
           </p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
@@ -684,7 +684,7 @@ function AuthPage({ mode }: { mode: "login" | "register" }) {
     <main className="mx-auto grid min-h-[calc(100vh-74px)] max-w-6xl items-center gap-8 px-5 py-16 md:grid-cols-[0.9fr_1.1fr]">
       <div>
         <h1 className="text-4xl font-black md:text-5xl">{mode === "register" ? "Create your product studio" : "Welcome back"}</h1>
-        <p className="mt-4 text-lg leading-8 text-mist">
+        <p className="mt-4 text-lg leading-8 text-navy/70">
           Sign in to generate, save, edit, and export AI-agent-based digital products from one focused workspace.
         </p>
       </div>
@@ -696,7 +696,7 @@ function AuthPage({ mode }: { mode: "login" | "register" }) {
         <button className="button button-primary w-full justify-center" disabled={busy}>
           {busy ? "Working..." : mode === "register" ? "Create Account" : "Log In"}
         </button>
-        <p className="mt-5 text-center text-sm text-mist/75">
+        <p className="mt-5 text-center text-sm text-navy/60">
           {mode === "register" ? "Already have an account?" : "Need an account?"}{" "}
           <Link className="text-navy underline" to={mode === "register" ? "/login" : "/register"}>
             {mode === "register" ? "Log in" : "Sign up"}
@@ -935,10 +935,10 @@ function Generator() {
           <div className="panel p-5">
             <img className="sidebar-photo" src={studioImages.generator} alt="Student using laptop" />
             <h2>{selected?.label || "Product Type"}</h2>
-            <p className="mt-2 text-sm leading-6 text-mist/80">{selected?.short}</p>
-            <p className="mt-4 rounded-lg border border-white/10 bg-white/5 p-3 text-sm text-white/70">{selected?.price}</p>
-            <h3 className="mt-6 text-sm font-semibold uppercase tracking-[0.18em] text-mist/60">Example Ideas</h3>
-            <ul className="mt-3 space-y-2 text-sm text-mist/80">
+            <p className="mt-2 text-sm leading-6 text-navy/65">{selected?.short}</p>
+            <p className="mt-4 rounded-lg border border-navy/10 bg-navy/5 p-3 text-sm text-navy/65">{selected?.price}</p>
+            <h3 className="mt-6 text-sm font-semibold uppercase tracking-[0.18em] text-navy/50">Example Ideas</h3>
+            <ul className="mt-3 space-y-2 text-sm text-navy/65">
               {selected?.examples.slice(0, 6).map((item) => <li key={item}>{item}</li>)}
             </ul>
           </div>
@@ -1102,7 +1102,7 @@ ${promptSection?.body.slice(0, 520) || "No system prompt section found yet. Add 
             </select>
           </label>
           <SellabilityScore score={score} />
-          {message && <p className="text-sm text-white/60">{message}</p>}
+          {message && <p className="text-sm text-navy/55">{message}</p>}
         </aside>
         <section className="document-editor">
           <div className="document-header">
@@ -1304,7 +1304,7 @@ function SectionTitle({ title, text, eyebrow }: { title: string; text: string; e
     <div className="mb-14 max-w-3xl">
       {eyebrow && <span className="eyebrow">{eyebrow}</span>}
       <h2 style={{fontFamily:"'DM Serif Display', serif", fontSize:"clamp(2.2rem,4.5vw,3.6rem)", fontWeight:400, lineHeight:1.08, letterSpacing:"-0.02em", color:"#000D10", marginTop: eyebrow ? "0" : undefined}}>{title}</h2>
-      <p className="mt-5" style={{color:"rgba(255,255,255,0.55)", fontSize:"1.05rem", lineHeight:1.75}}>{text}</p>
+      <p className="mt-5" style={{color:"rgba(0,13,16,0.55)", fontSize:"1.05rem", lineHeight:1.75}}>{text}</p>
     </div>
   );
 }
@@ -1343,7 +1343,7 @@ function Select({ label, value, options, onChange }: { label: string; value: str
 function Disclaimer() {
   return (
     <div className="mx-auto max-w-7xl px-5 pb-8">
-      <p className="rounded-lg border border-white/10 bg-white/[0.04] p-4 text-sm text-mist/75">
+      <p className="rounded-lg border border-navy/10 bg-navy/[0.04] p-4 text-sm text-navy/60">
         Prompt For Profit helps users create educational and business planning materials. Users should review, edit, and verify all generated content before selling or publishing it.
         <span className="mt-2 block">
           Interface icons by <a className="text-navy/50 underline" href="https://freeicons.io" target="_blank" rel="noreferrer">Freeicons.io</a>.

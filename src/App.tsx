@@ -1364,8 +1364,8 @@ function Disclaimer() {
           </a>
         </div>
       </div>
-      <p className="mt-6 text-xs" style={{color:"rgba(0,13,16,0.35)"}}>
-        Prompt For Profit helps users create educational and business planning materials. Review and verify all generated content before selling or publishing.
+      <p className="mt-6 text-xs leading-relaxed" style={{color:"rgba(0,13,16,0.30)"}}>
+        Prompt For Profit helps users create educational and business planning materials. Users should review, edit, and verify all generated content before selling or publishing it. Interface icons by <a href="https://freeicons.io" target="_blank" rel="noreferrer" className="underline underline-offset-2">Freeicons.io</a>.
       </p>
     </footer>
   );

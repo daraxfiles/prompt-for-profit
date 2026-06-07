@@ -349,7 +349,7 @@ function Landing() {
       <section className="mx-auto grid min-h-[calc(100vh-74px)] max-w-7xl items-center gap-12 px-5 py-16 lg:grid-cols-[1fr_0.92fr]">
         <div>
           <span className="eyebrow">AI Agent Products</span>
-          <h1 className="max-w-3xl font-extrabold leading-[1.04]" style={{fontSize:"clamp(2.8rem,6.5vw,5.4rem)",letterSpacing:"-0.025em",color:"#ffffff"}}>
+          <h1 className="max-w-3xl leading-[1.04]" style={{fontFamily:"'DM Serif Display', serif",fontSize:"clamp(3rem,7vw,5.8rem)",fontWeight:400,letterSpacing:"-0.02em",color:"#ffffff"}}>
             Create Sellable AI Agent Products Without Coding
           </h1>
           <p className="mt-7 max-w-xl leading-8" style={{color:"rgba(255,255,255,0.60)",fontSize:"1.05rem"}}>
@@ -398,11 +398,11 @@ function Landing() {
           </div>
         </div>
       </section>
-      <section className="mx-auto max-w-7xl px-5 pb-10">
+      <section className="mx-auto max-w-7xl px-5 py-20">
         <div className="relational-strip">
           <img src={studioImages.dashboard} alt="Business team looking over a city" />
           <div>
-            <h2>Build products for real people, not abstract prompts.</h2>
+            <h2 style={{fontFamily:"'DM Serif Display', serif", fontWeight:400}}>Build products for real people, not abstract prompts.</h2>
             <p>Prompt For Profit now centers the human use case: students, teachers, freelancers, business owners, and local experts packaging AI workflows into sellable products.</p>
           </div>
         </div>
@@ -411,9 +411,9 @@ function Landing() {
       <ProductTypes />
       <HowItWorks />
       <UseCases />
-      <section className="mx-auto max-w-7xl px-5 pb-20">
+      <section className="mx-auto max-w-7xl px-5 py-28">
         <div className="cta-band">
-          <h2>Ready to turn your AI agent idea into a product?</h2>
+          <h2 style={{fontFamily:"'DM Serif Display', serif", fontWeight:400}}>Ready to turn your AI agent idea into a product?</h2>
           <button className="button button-primary" onClick={() => navigate("/generator")}>
             Start Building Now <FreeIcon name="rocket" size={18} />
           </button>
@@ -431,10 +431,10 @@ function ImmersiveStudio() {
   const progress = `${((stageIndex + 1) / studioStages.length) * 100}%`;
 
   return (
-    <section className="mx-auto max-w-7xl px-5 py-16">
+    <section className="mx-auto max-w-7xl px-5 py-28">
       <div className="immersion-lab">
         <div className="immersion-copy">
-          <h2>Choose your creation path</h2>
+          <h2 style={{fontFamily:"'DM Serif Display', serif", fontWeight:400}}>Choose your creation path</h2>
           <p>Start with who you are, then move through the exact journey from rough idea to sellable AI-agent product.</p>
           <div className="path-switcher">
             {creatorPaths.map((path) => (
@@ -498,8 +498,8 @@ function ProductTypes() {
     api.meta().then((data) => setTypes(data.productTypes));
   }, []);
   return (
-    <section id="product-types" className="mx-auto max-w-7xl px-5 py-16">
-      <SectionTitle title="Product Types" text="Five ways to package an AI agent idea into something useful, teachable, and sellable." />
+    <section id="product-types" className="mx-auto max-w-7xl px-5 py-28">
+      <SectionTitle eyebrow="What You Can Build" title="Product Types" text="Five ways to package an AI agent idea into something useful, teachable, and sellable." />
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-5">
         {types.map((type, index) => {
           const icon = typeIcons[index] || "document";
@@ -518,8 +518,8 @@ function ProductTypes() {
 
 function HowItWorks() {
   return (
-    <section className="mx-auto max-w-7xl px-5 py-16">
-      <SectionTitle title="How It Works" text="A simple guided flow keeps beginners moving without staring at a blank page." />
+    <section className="mx-auto max-w-7xl px-5 py-28">
+      <SectionTitle eyebrow="The Process" title="How It Works" text="A simple guided flow keeps beginners moving without staring at a blank page." />
       <div className="grid gap-4 md:grid-cols-4">
         {["Choose a product type", "Describe your idea or audience", "Generate a structured product draft", "Edit, export, and sell"].map((step, index) => (
           <div className="step-card" key={step}>
@@ -639,8 +639,8 @@ function UseCases() {
     "Build a grant writing assistant"
   ];
   return (
-    <section className="mx-auto max-w-7xl px-5 py-16">
-      <SectionTitle title="Use Cases" text="Start with a practical workflow, then turn it into an asset buyers can understand fast." />
+    <section className="mx-auto max-w-7xl px-5 py-28">
+      <SectionTitle eyebrow="Examples" title="Use Cases" text="Start with a practical workflow, then turn it into an asset buyers can understand fast." />
       <div className="grid gap-3 md:grid-cols-3">
         {cases.map((item) => (
           <div className="use-case" key={item}>
@@ -1295,11 +1295,12 @@ function PromptBuilder() {
   );
 }
 
-function SectionTitle({ title, text }: { title: string; text: string }) {
+function SectionTitle({ title, text, eyebrow }: { title: string; text: string; eyebrow?: string }) {
   return (
-    <div className="mb-8 max-w-3xl">
-      <h2 className="text-3xl font-black md:text-4xl">{title}</h2>
-      <p className="mt-3 text-mist/80">{text}</p>
+    <div className="mb-14 max-w-3xl">
+      {eyebrow && <span className="eyebrow">{eyebrow}</span>}
+      <h2 style={{fontFamily:"'DM Serif Display', serif", fontSize:"clamp(2.2rem,4.5vw,3.6rem)", fontWeight:400, lineHeight:1.08, letterSpacing:"-0.02em", color:"#ffffff", marginTop: eyebrow ? "0" : undefined}}>{title}</h2>
+      <p className="mt-5" style={{color:"rgba(255,255,255,0.55)", fontSize:"1.05rem", lineHeight:1.75}}>{text}</p>
     </div>
   );
 }

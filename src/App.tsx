@@ -1343,14 +1343,31 @@ function Select({ label, value, options, onChange }: { label: string; value: str
 
 function Disclaimer() {
   return (
-    <div className="mx-auto max-w-7xl px-5 pb-8">
-      <p className="rounded-lg border border-navy/10 bg-navy/[0.04] p-4 text-sm text-navy/60">
-        Prompt For Profit helps users create educational and business planning materials. Users should review, edit, and verify all generated content before selling or publishing it.
-        <span className="mt-2 block">
-          Interface icons by <a className="text-navy/50 underline" href="https://freeicons.io" target="_blank" rel="noreferrer">Freeicons.io</a>.
-        </span>
+    <footer className="mx-auto max-w-7xl px-5 py-10" style={{borderTop:"1px solid rgba(0,13,16,0.10)"}}>
+      <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
+        <div>
+          <p className="text-sm font-bold tracking-wide" style={{color:"rgba(0,13,16,0.75)"}}>Prompt For Profit</p>
+          <a href="mailto:promptforprofit0@gmail.com" className="mt-1 block text-sm" style={{color:"rgba(0,13,16,0.50)"}}>promptforprofit0@gmail.com</a>
+        </div>
+        <div className="flex flex-wrap gap-6">
+          <a href="https://www.youtube.com/@PromptProfit0" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm font-semibold" style={{color:"rgba(0,13,16,0.60)"}}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
+            @PromptProfit0
+          </a>
+          <a href="https://www.instagram.com/prompt_forprofit" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm font-semibold" style={{color:"rgba(0,13,16,0.60)"}}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.2 4.8 1.7 5 5 .1 1.3.1 1.6.1 4.8 0 3.2 0 3.6-.1 4.8-.2 3.3-1.7 4.8-5 5-1.3.1-1.6.1-4.9.1-3.2 0-3.6 0-4.8-.1-3.3-.2-4.8-1.7-5-5C2.1 15.6 2 15.2 2 12c0-3.2 0-3.6.1-4.8.2-3.3 1.7-4.8 5-5C8.4 2.2 8.8 2.2 12 2.2zm0-2.2C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12c0 3.3 0 3.7.1 4.9.2 4.4 2.6 6.8 7 7C8.3 24 8.7 24 12 24s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9 0-3.3 0-3.7-.1-4.9C23.7 2.7 21.3.3 16.9.1 15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4A6.2 6.2 0 0 0 12 5.8zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8z"/></svg>
+            prompt_forprofit
+          </a>
+          <a href="https://www.tiktok.com/@prompt_forprofit" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm font-semibold" style={{color:"rgba(0,13,16,0.60)"}}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.6 3.3A4.7 4.7 0 0 1 15 0h-3.3v16.4a2.8 2.8 0 1 1-2-2.7V10a6.1 6.1 0 1 0 5.3 6V8.2a8 8 0 0 0 4.6 1.4V6.3a4.7 4.7 0 0 1-3-.3V3.3z"/></svg>
+            prompt_forprofit
+          </a>
+        </div>
+      </div>
+      <p className="mt-6 text-xs" style={{color:"rgba(0,13,16,0.35)"}}>
+        Prompt For Profit helps users create educational and business planning materials. Review and verify all generated content before selling or publishing.
       </p>
-    </div>
+    </footer>
   );
 }
 

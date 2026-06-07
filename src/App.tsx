@@ -251,7 +251,7 @@ function Shell({ children }: { children: ReactNode }) {
       <div className="app-ambient fixed inset-0 -z-10" />
       <div className="fixed -z-10 pointer-events-none" style={{top:"0%",left:"0%",width:"800px",height:"600px",borderRadius:"50%",background:"radial-gradient(ellipse,rgba(255,255,255,0.03) 0%,transparent 65%)",animation:"floatOrb 20s ease-in-out infinite"}} />
       <div className="fixed -z-10 pointer-events-none" style={{top:"20%",right:"0%",width:"600px",height:"500px",borderRadius:"50%",background:"radial-gradient(ellipse,rgba(255,255,255,0.02) 0%,transparent 65%)",animation:"floatOrb 26s ease-in-out infinite 5s"}} />
-      <header className="sticky top-0 z-30 border-b border-white/[0.08] backdrop-blur-xl" style={{background:"rgba(0,13,16,0.85)"}}>
+      <header className="sticky top-0 z-30 border-b border-white/[0.08] backdrop-blur-xl" style={{background:"rgba(214,229,239,0.92)"}}>
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
           <Link to="/" className="flex items-center gap-3">
             <span className="brand-logo-shell">
@@ -349,7 +349,7 @@ function Landing() {
       <section className="mx-auto grid min-h-[calc(100vh-74px)] max-w-7xl items-center gap-12 px-5 py-16 lg:grid-cols-[1fr_0.92fr]">
         <div>
           <span className="eyebrow">AI Agent Products</span>
-          <h1 className="max-w-3xl leading-[1.04]" style={{fontFamily:"'DM Serif Display', serif",fontSize:"clamp(3rem,7vw,5.8rem)",fontWeight:400,letterSpacing:"-0.02em",color:"#ffffff"}}>
+          <h1 className="max-w-3xl leading-[1.04]" style={{fontFamily:"'DM Serif Display', serif",fontSize:"clamp(3rem,7vw,5.8rem)",fontWeight:400,letterSpacing:"-0.02em",color:"#000D10"}}>
             Create Sellable AI Agent Products Without Coding
           </h1>
           <p className="mt-7 max-w-xl leading-8" style={{color:"rgba(255,255,255,0.60)",fontSize:"1.05rem"}}>
@@ -694,7 +694,7 @@ function AuthPage({ mode }: { mode: "login" | "register" }) {
         </button>
         <p className="mt-5 text-center text-sm text-mist/75">
           {mode === "register" ? "Already have an account?" : "Need an account?"}{" "}
-          <Link className="text-white underline" to={mode === "register" ? "/login" : "/register"}>
+          <Link className="text-navy underline" to={mode === "register" ? "/login" : "/register"}>
             {mode === "register" ? "Log in" : "Sign up"}
           </Link>
         </p>
@@ -1299,7 +1299,7 @@ function SectionTitle({ title, text, eyebrow }: { title: string; text: string; e
   return (
     <div className="mb-14 max-w-3xl">
       {eyebrow && <span className="eyebrow">{eyebrow}</span>}
-      <h2 style={{fontFamily:"'DM Serif Display', serif", fontSize:"clamp(2.2rem,4.5vw,3.6rem)", fontWeight:400, lineHeight:1.08, letterSpacing:"-0.02em", color:"#ffffff", marginTop: eyebrow ? "0" : undefined}}>{title}</h2>
+      <h2 style={{fontFamily:"'DM Serif Display', serif", fontSize:"clamp(2.2rem,4.5vw,3.6rem)", fontWeight:400, lineHeight:1.08, letterSpacing:"-0.02em", color:"#000D10", marginTop: eyebrow ? "0" : undefined}}>{title}</h2>
       <p className="mt-5" style={{color:"rgba(255,255,255,0.55)", fontSize:"1.05rem", lineHeight:1.75}}>{text}</p>
     </div>
   );
@@ -1342,7 +1342,7 @@ function Disclaimer() {
       <p className="rounded-lg border border-white/10 bg-white/[0.04] p-4 text-sm text-mist/75">
         Prompt For Profit helps users create educational and business planning materials. Users should review, edit, and verify all generated content before selling or publishing it.
         <span className="mt-2 block">
-          Interface icons by <a className="text-white/50 underline" href="https://freeicons.io" target="_blank" rel="noreferrer">Freeicons.io</a>.
+          Interface icons by <a className="text-navy/50 underline" href="https://freeicons.io" target="_blank" rel="noreferrer">Freeicons.io</a>.
         </span>
       </p>
     </div>
